@@ -1,5 +1,3 @@
-// Exercicio de escrita de codigo
-
 // Exercicio 1 - a)
 
 function descricaoStella(){
