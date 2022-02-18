@@ -115,12 +115,6 @@ function retornaUltimoElemento(array){
 // EXERCÍCIO 11
 function trocaPrimeiroEUltimo(array) {
   
-  troca = array.length
-
-  ultimo = array[troca - 1] = primeiro
-  primeiro = array[0] = ultimo 
-
-  return array[ultimo, primeiro]
 }
 
 // EXERCÍCIO 12
