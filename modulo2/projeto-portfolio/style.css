@@ -1,0 +1,85 @@
+* {
+    color: white;
+}
+
+h1{
+ color: blueviolet;
+ text-align: center;
+}
+
+.paginas button{
+    color: black;
+}
+
+h2{
+    text-align: center;
+    color: blueviolet;
+}
+
+
+p{
+    color: black;
+}
+
+
+ 
+
+
+body {
+    background-color:rgb(212, 117, 117);
+    padding: 0;
+    margin: 0;
+}
+h2{
+    text-align: center;
+    color: blueviolet;
+}
+
+
+.links{
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+.links img {
+    width: 50px;
+}
+
+form{
+    text-align: center;
+}
+form label{
+    display: block;
+    text-align: left;
+}
+form textarea{
+    width: 95%;
+    height: 100px;
+    outline: none;
+    margin: 10px;
+    background-color: rgb(212, 209, 209);
+    padding: 10px;
+    color:  rgb(14, 94, 60);;
+}
+form input{
+    border: none;
+    outline: none;
+    height: 30px;
+    width:90%;
+    margin: 10px;
+    background-color: rgb(212, 209, 209);
+    padding: 0px 10px;
+    color:  rgb(94, 14, 70);;
+}
+
+.botao{
+    background-color: rgb(201, 12, 53);
+    color: white;
+    font-weight: bold;
+    border:none;
+    outline: none;
+    border-radius: 5px;
+    padding: 8px;
+    margin: 10px;
+}
