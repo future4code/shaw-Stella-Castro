@@ -1,25 +1,50 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Cadastro } from "./components/cadastro";
+import { PlayLists } from "./components/playlists";
+import styled from "styled-components";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const Body  = styled.div`
+display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+`
+
+export default class App extends React.Component  {
+ state = {
+   home:"cadastro"
+ }
+ 
+selectPages =() =>{
+switch (this.state.home){
+case "cadastro":
+  return <Cadastro goListas={this.goListas} />
+  case "lista":
+    return <PlayLists   goCadastro={this.goCadastro}/>  
+    default:
+      return <div>Erro 404 - pagina nao Encontrada</div>
 }
 
-export default App;
+}
+goLIstaDetalhada = () =>{
+  this.setState({home:"listaDetalhada"})
+}
+
+  goCadastro =()=>{
+    this.setState({home:"cadastro"})
+  }
+
+goListas =() =>{
+this.setState({home: "lista"})
+}
+
+  render(){
+  return (
+    <Body>
+      {this.selectPages()} 
+      </Body>
+  );
+}
+}
