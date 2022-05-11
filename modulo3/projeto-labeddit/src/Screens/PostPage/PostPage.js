@@ -4,6 +4,9 @@ const PostPage = () => {
     return (
       <div >
         PostPage
+        <hr/>
+        <br/>
+        <br/>
       </div>
     )
   }

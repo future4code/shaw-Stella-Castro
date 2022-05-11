@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 }
 
 export const goToFeedPage = (navigate) =>{
-navigate ("feed") // rota para ir para a pag. de registro
+navigate ("feed") // rota para ir para a pag. feed
 }
 
 export const goToPostPage = (navigate) =>{
@@ -18,7 +18,7 @@ export const goToRegisterPage = (navigate) =>{
         }
 
 export const goBack = (navigate) =>{
-            navigate (-1) // rota para ir para voltar
+            navigate (-1) // rota para voltar
             }
             
         
