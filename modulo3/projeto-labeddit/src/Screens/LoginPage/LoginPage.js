@@ -40,6 +40,7 @@ import { baseURL } from "../../constants/url";
 
    const Login = async (event) =>{
      event.preventDefault()
+     
      const body = {
        email: email,
        password: password
