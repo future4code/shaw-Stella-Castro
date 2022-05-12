@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 }
 
 export const goToFeedPage = (navigate) =>{
-navigate ("feed") // rota para ir para a pag. feed
+navigate ("/feed") // rota para ir para a pag. feed
 }
 
 export const goToPostPage = (navigate) =>{
